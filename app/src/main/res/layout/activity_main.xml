@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_back"
+            android:text="Button"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                tools:srcCompat="@drawable/img" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_draw"
+                android:ems="10"
+                android:hint="Nhập Email..."
+                android:inputType="textPersonName"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp" />
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="Nhập tên đăng nhập..."
+                android:background="@drawable/btn_draw"
+                android:ems="10"
+                android:hint="Nhập tên đăng nhập..."
+                android:inputType="textPersonName"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="Nhập mật khẩu..."
+                android:background="@drawable/btn_draw"
+                android:ems="10"
+                android:hint="Nhập mật khẩu..."
+                android:inputType="textPassword"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp" />
+
+            <EditText
+                android:id="@+id/etRePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="Nhập lại mật khẩu..."
+                android:background="@drawable/btn_draw"
+                android:ems="10"
+                android:hint="Nhập lại mật khẩu..."
+                android:inputType="textPassword"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+
+                android:text="Register" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingBottom="60dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="167dp"
+            android:layout_height="122dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgLogin"
+                android:layout_width="173dp"
+                android:layout_height="157dp"
+                android:layout_gravity="center"
+                tools:srcCompat="@drawable/img" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etLogUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="Nhập tên đăng nhập..."
+                android:background="@drawable/btn_draw"
+                android:ems="10"
+                android:hint="Nhập tên đăng nhập..."
+                android:inputType="textPersonName"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp" />
+
+            <EditText
+                android:id="@+id/etLogPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:autofillHints="Nhập mật khẩu..."
+                android:background="@drawable/btn_draw"
+                android:ems="10"
+                android:hint="Nhập mật khẩu..."
+                android:inputType="textPassword"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="4dp" />
+            <Button
+                android:id="@+id/btnLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Login" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đăng nhập" />
+
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đăng ký" />
+    </LinearLayout>
+
+
+</LinearLayout>
